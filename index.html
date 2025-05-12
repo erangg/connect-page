@@ -1,60 +1,16 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Connect - User List</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Connect Login</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="container">
-        <aside class="sidebar">
-            <h2>Connect</h2>
-            <nav>
-                <button class="nav-item active">User</button>
-                <button class="nav-item">Hak Akses</button>
-                <button class="nav-item logout">Logout</button>
-            </nav>
-        </aside>
-        <main class="content">
-            <input type="text" class="search" placeholder="Cari user">
-            <div class="user-list">
-                <div class="user-card">
-                    <div>
-                        <strong>Rahmat Saudi Al Fathir As</strong><br>
-                        <span>rahmatsaudi@universitasmulia.ac.id</span><br>
-                        <span class="badge admin">Admin</span>
-                        <span class="badge">Employee</span>
-                    </div>
-                    <div class="status aktif">Aktif</div>
-                </div>
-                <div class="user-card">
-                    <div>
-                        <strong>Alif Andhika P.N</strong><br>
-                        <span>2313017students.@universitasmulia.ac.id</span><br>
-                        <span class="badge">Employee</span>
-                    </div>
-                    <div class="status aktif">Aktif</div>
-                </div>
-                <div class="user-card">
-                    <div>
-                        <strong>Zyuu</strong><br>
-                        <span>ovazyu@gmail.com</span><br>
-                        <span class="badge">Employee</span>
-                    </div>
-                    <div class="status aktif">Aktif</div>
-                </div>
-                <div class="user-card">
-                    <div>
-                        <strong>Alif Andhika P.N</strong><br>
-                        <span>alifandhikazr3@gmail.com</span><br>
-                        <span class="badge">Employee</span>
-                    </div>
-                    <div class="status suspended">Suspended</div>
-                </div>
-            </div>
-            <button class="add-btn">+</button>
-        </main>
-    </div>
+<body class="center">
+  <form action="user.html" method="get" class="login-box">
+    <h1>Connect With Us</h1>
+    <input type="email" placeholder="Email" required>
+    <input type="password" placeholder="Password" required>
+    <button type="submit">Sign In</button>
+  </form>
 </body>
 </html>

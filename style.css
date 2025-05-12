@@ -1,116 +1,101 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-}
-
 body {
-    background-color: #f8f8f8;
-    display: flex;
-    height: 100vh;
+  margin: 0;
+  font-family: sans-serif;
+  background: white;
 }
-
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+}
+.login-box, .logout-message {
+  text-align: center;
+  width: 300px;
+}
+.login-box input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.login-box button, .btn {
+  width: 100%;
+  padding: 10px;
+  background: #1a1a1a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
 .container {
-    display: flex;
-    width: 100%;
+  display: flex;
+  height: 100vh;
 }
-
 .sidebar {
-    width: 200px;
-    background-color: white;
-    padding: 20px;
-    border-right: 1px solid #ccc;
+  width: 200px;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+  background: #fff;
 }
-
 .sidebar h2 {
-    margin-bottom: 20px;
+  margin-top: 0;
 }
-
 .nav-item {
-    display: block;
-    margin: 10px 0;
-    padding: 10px;
-    width: 100%;
-    background-color: #eee;
-    border: none;
-    text-align: left;
-    cursor: pointer;
+  display: block;
+  padding: 10px 0;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
 }
-
-.nav-item.active {
-    background-color: #000;
-    color: white;
+.nav-item.active, .nav-item:hover {
+  background: #000;
+  color: #fff;
+  padding-left: 10px;
 }
-
-.nav-item.logout {
-    margin-top: 30px;
+.main-content {
+  flex: 1;
+  padding: 20px;
 }
-
-.content {
-    flex: 1;
-    padding: 20px;
-    position: relative;
+.search-bar {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
-
-.search {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-}
-
-.user-list {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
 .user-card {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px;
-    background-color: white;
-    border: 1px solid #ccc;
-    border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
-
 .badge {
-    display: inline-block;
-    background-color: #333;
-    color: white;
-    padding: 2px 6px;
-    font-size: 10px;
-    margin-top: 5px;
-    margin-right: 5px;
-    border-radius: 4px;
+  background: #222;
+  color: white;
+  font-size: 0.75em;
+  padding: 2px 6px;
+  border-radius: 3px;
+  margin-right: 5px;
 }
-
-.badge.admin {
-    background-color: darkred;
+.status.active {
+  font-weight: bold;
+  color: green;
 }
-
-.status {
-    align-self: center;
-    font-weight: bold;
-}
-
-.status.aktif {
-    color: green;
-}
-
-.status.suspended {
-    color: red;
-}
-
 .add-btn {
-    position: absolute;
-    right: 20px;
-    bottom: 20px;
-    background-color: #ddd;
-    border: none;
-    border-radius: 5px;
-    width: 35px;
-    height: 35px;
-    font-size: 24px;
-    cursor: pointer;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: #ddd;
+  border: none;
+  padding: 10px 15px;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
 }
